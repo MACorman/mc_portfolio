@@ -1,26 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NameAndDesc from './NameAndDesc';
+import About from './About'
+import ProjectsContainer from './ProjectsContainer';
+import Contact from './Contact'
+import BlogPostContainer from './BlogPostsContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NameAndDesc />
+      <About />
+      <ProjectsContainer />
+      <BlogPostContainer />
+      <Contact />
     </div>
   );
 }
 
 export default App;
+
+
+// public file containing images
+// image of me for home
+// screen shot of each project
+// technologies - display the technology logo
