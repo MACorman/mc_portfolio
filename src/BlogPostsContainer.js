@@ -4,6 +4,8 @@ import BlogPostCard from './BlogPostCard'
 // import { Carousel } from 'react-responsive-carousel';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 
 class BlogPostContainer extends React.Component {
@@ -31,8 +33,10 @@ class BlogPostContainer extends React.Component {
                     <Slider>
                         {this.state.posts.length && this.state.posts.map(post => <BlogPostCard {...post} />)}
                     </Slider>
-                    <ButtonBack>Back</ButtonBack>
-                    <ButtonNext>Next</ButtonNext>
+                    <div style={{marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+                        <ButtonBack style={{border: 'none', color: 'black', backgroundColor: 'white', marginRight: '15px'}}><FontAwesomeIcon icon={faAngleLeft} color={'grey'} size={'2x'}/></ButtonBack>
+                        <ButtonNext style={{border: 'none', backgroundColor: 'white', marginLeft: '15px'}}><FontAwesomeIcon icon={faAngleRight} color={'grey'} size={'2x'}/></ButtonNext>
+                    </div>
                 </CarouselProvider>
                 
             </>
