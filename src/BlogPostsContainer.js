@@ -29,6 +29,7 @@ class BlogPostContainer extends React.Component {
                     naturalSlideHeight={125}
                     totalSlides={10}
                     isIntrinsicHeight={true}
+                    infinite={true}
                 >
                     <Slider>
                         {this.state.posts.length && this.state.posts.map(post => <BlogPostCard {...post} />)}
