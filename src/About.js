@@ -21,7 +21,7 @@ function About() {
             <p>HTML</p>
             <FontAwesomeIcon icon={faCss3} size={'2x'} />
             <p>CSS</p>
-            {/* <FontAwesomeIcon icon={faRails} size={'2x'} /> */}
+            <a href='./resume.pdf' target="_blank">Resume</a>
             
         </>
     )
