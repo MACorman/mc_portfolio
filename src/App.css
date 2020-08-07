@@ -10,10 +10,26 @@ p {
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+
 .headshot {
   border-radius: 50%;
   height: 25em;
   width: auto;
+  
 }
 
 .menu-container {
@@ -51,4 +67,64 @@ p {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+.about-container {
+  display: inline-flex;
+  margin-top: 8%;
+
+}
+
+.headshot-container {
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  padding-right: 2%;
+  padding-left: 1%;
+}
+
+.technologies {
+  display: inline-flex;
+}
+
+.about-content {
+  padding-right: 4%;
+  padding-left: .8%;
+  margin-top: 3.5%;
+  
+}
+
+.devicon-ruby-plain {
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.devicon-rails-plain {
+  font-size: 2em;
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon-container {
+  padding-left: 2%;
+  padding-right: 2%;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.icon-text {
+  text-align: center;
+}
+
+.resume {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.resume:hover {
+  color: grey
 }
