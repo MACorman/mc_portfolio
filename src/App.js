@@ -20,7 +20,7 @@ class App extends React.Component {
 
   displayedScreen = () => {
     switch(this.state.display) {
-      case 'name':
+      case 'home':
         return <NameAndDesc />
       case 'about':
         return <About />
@@ -38,9 +38,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
-        <div style={{float: 'right'}}>
-          <FontAwesomeIcon icon={faBars} onClick={() => this.setState({showMenu: true})}/>
+      <div className='App'>
+        <div className='menu-container'>
+          <FontAwesomeIcon className='hamburger' icon={faBars} onClick={() => this.setState({showMenu: true})} size='2x'/>
           <Menu 
             open={this.state.showMenu}
             getContentAnchorEl={null}
@@ -55,10 +55,10 @@ class App extends React.Component {
           </Menu>
         </div>
         <div onClick={() => this.setState({showMenu: false})}>
-        <img style={{width: '5%', height: 'auto'}} src="./mc_favicon.png" />
+        <img className='logo-initials' onClick={() => this.setState({display: 'home'})} src="./mc_favicon.png" />
           {this.displayedScreen()}
         </div>
-      </>
+      </div>
     );
   }
 }

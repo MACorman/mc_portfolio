@@ -3,9 +3,9 @@ import React from 'react'
 function NameAndDesc() {
     return (
         <>
-            <div style={{textAlign: 'center'}}>
-                <img src="./logo_transparent_background.png" style={{width: "80%", height: 'auto'}}/>
-                <p>Dedicated to building beautiful, effective solutions.</p>
+            <div className='home'>
+                <img className='name-logo' src="./logo_transparent_background.png"/>
+                <p className='subtitle'>Dedicated to building beautiful, effective solutions.</p>
             </div>
             {/* <h1>Madeline Corman</h1> */}
         </>
