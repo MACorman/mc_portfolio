@@ -11,7 +11,7 @@ const projects = [
     {
         name: 'NutriPal',
         description: 'A nutrition and weight tracking app where users may build out a daily food diary with their chosen foods, view the associated nutritional breakdown, and track their body weight.',
-        image: null,
+        image: './nutripal.png',
         frontend: 'https://github.com/MACorman/mfp_frontend',
         backend: 'https://github.com/MACorman/mfp_clone_backend',
         url: null,
