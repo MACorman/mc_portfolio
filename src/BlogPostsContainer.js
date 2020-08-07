@@ -6,6 +6,8 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Loader from 'react-loader-spinner'
 
 
 class BlogPostContainer extends React.Component {
@@ -32,7 +34,7 @@ class BlogPostContainer extends React.Component {
                     infinite={true}
                 >
                     <Slider>
-                        {this.state.posts.length && this.state.posts.map(post => <BlogPostCard {...post} />)}
+                        {this.state.posts.length ? this.state.posts.map(post => <BlogPostCard {...post} />) : <Loader type="TailSpin" color="grey" height={100} width={100} visible={true}/>}
                     </Slider>
                     <div style={{marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
                         <ButtonBack style={{border: 'none', color: 'black', backgroundColor: 'white', marginRight: '15px'}}><FontAwesomeIcon icon={faAngleLeft} color={'grey'} size={'2x'}/></ButtonBack>
