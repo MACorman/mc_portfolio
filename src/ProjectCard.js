@@ -9,13 +9,20 @@ class ProjectCard extends React.Component {
         return (
             <Slide>
                 <h3>{this.props.name}</h3>
-                {this.props.demo ? <YouTube videoId={this.props.demo} opts={{height: '250', width: '450'}}/> : <img src={this.props.image} style={{height: '250px', width: 'auto'}}/>}
-                <p>{this.props.description}</p>
-                <a href={this.props.frontend} target="_blank">Frontend</a>
+                <hr className='fancy-line'/>
                 <br/>
-                <a href={this.props.backend} target="_blank">Backend</a>
-                <br/>
-                {this.props.url && <a href={this.props.url} target="_blank">Live</a>}
+                <div className='project-graphic'>
+                    {this.props.demo ? <YouTube className='youtube-embed' videoId={this.props.demo} opts={{height: '300', width: '500'}}/> : <img src={this.props.image} style={{height: '300px', width: 'auto'}}/>}
+                </div>
+                <div className='project-desc'>
+                    <p>{this.props.description}</p>
+                </div>
+                <div className='project_code_links'>
+                    <a href={this.props.frontend} target="_blank">Frontend</a>
+                    <span> | </span>
+                    <a href={this.props.backend} target="_blank">Backend</a>
+                    {this.props.url && <div><a href={this.props.url} target="_blank">Live</a></div>}
+                </div>
             </Slide>
         )
     }
