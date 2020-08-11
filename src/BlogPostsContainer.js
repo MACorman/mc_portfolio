@@ -25,7 +25,7 @@ class BlogPostContainer extends React.Component {
     render() {
         return (
             <>
-                <h2>Blog</h2>
+                <h2>BLOG</h2>
                 <CarouselProvider
                     naturalSlideWidth={100}
                     naturalSlideHeight={125}
@@ -37,8 +37,8 @@ class BlogPostContainer extends React.Component {
                         {this.state.posts.length ? this.state.posts.map(post => <BlogPostCard {...post} />) : <Loader type="TailSpin" color="grey" height={100} width={100} visible={true}/>}
                     </Slider>
                     <div style={{marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-                        <ButtonBack style={{border: 'none', color: 'black', backgroundColor: 'white', marginRight: '15px'}}><FontAwesomeIcon icon={faAngleLeft} color={'grey'} size={'2x'}/></ButtonBack>
-                        <ButtonNext style={{border: 'none', backgroundColor: 'white', marginLeft: '15px'}}><FontAwesomeIcon icon={faAngleRight} color={'grey'} size={'2x'}/></ButtonNext>
+                        <ButtonBack style={{border: 'none', outline: 'none', backgroundColor: 'white', marginRight: '15px'}}><FontAwesomeIcon icon={faAngleLeft} color={'black'} size={'2x'}/></ButtonBack>
+                        <ButtonNext style={{border: 'none', outline: 'none', backgroundColor: 'white', marginLeft: '15px'}}><FontAwesomeIcon icon={faAngleRight} color={'black'} size={'2x'}/></ButtonNext>
                     </div>
                 </CarouselProvider>
                 

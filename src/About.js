@@ -13,7 +13,7 @@ function About() {
                 </div>
                 <div className='about-content'>
                     <p>I am a Brooklyn-based full-stack software engineer with an eye for detail and desire to know more. While working primarily in Ruby and JavaScript frameworks, I have delighted in creating applications from ideation and planning through to completion. I am passionate about solving problems - whether they be bugs in the code or the impetus for my next big project. </p>
-                    <h3>Technologies</h3>
+                    <h3>TECHNOLOGIES</h3>
                     <div className='technologies'>
                         <span className='icon-container'>
                             <div className='icon'>
