@@ -12,6 +12,7 @@ class ProjectsContainer extends React.Component {
         return (
             <>
                 <h2>PROJECTS</h2>
+                <hr className='fancy-line'/>
                 <CarouselProvider
                     naturalSlideWidth={100}
                     naturalSlideHeight={125}
@@ -23,7 +24,7 @@ class ProjectsContainer extends React.Component {
                         {projects.map(p => <ProjectCard {...p} />)}
                     </Slider>
                     <div style={{marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', paddingTop: '2%'}}>
-                        <ButtonBack style={{border: 'none', outline: 'none', color: 'black', backgroundColor: 'white', marginRight: '150px'}}><FontAwesomeIcon icon={faAngleLeft} color={'black'} size={'3x'}/></ButtonBack>
+                        <ButtonBack style={{border: 'none', outline: 'none', backgroundColor: 'white', marginRight: '150px'}}><FontAwesomeIcon icon={faAngleLeft} color={'black'} size={'3x'}/></ButtonBack>
                         <ButtonNext style={{border: 'none', outline: 'none', backgroundColor: 'white', marginLeft: '150px'}}><FontAwesomeIcon icon={faAngleRight} color={'black'} size={'3x'}/></ButtonNext>
                     </div>
                 </CarouselProvider>

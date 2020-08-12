@@ -40,7 +40,9 @@ class App extends React.Component {
     return (
       <div className='App'>
         <div className='menu-container'>
-          <FontAwesomeIcon className='hamburger' icon={faBars} onClick={() => this.setState({showMenu: true})} size='2x'/>
+          {/* <div className='hamburger-container'> */}
+            <FontAwesomeIcon className='hamburger' icon={faBars} onClick={() => this.setState({showMenu: true})} size='2x'/>
+          {/* </div> */}
           <Menu 
             open={this.state.showMenu}
             getContentAnchorEl={null}

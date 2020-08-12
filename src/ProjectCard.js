@@ -8,11 +8,9 @@ class ProjectCard extends React.Component {
     render() {
         return (
             <Slide>
-                <h3>{this.props.name}</h3>
-                <hr className='fancy-line'/>
-                <br/>
+                <h3 className='project-title'>{this.props.name}</h3>
                 <div className='project-graphic'>
-                    {this.props.demo ? <YouTube className='youtube-embed' videoId={this.props.demo} opts={{height: '300', width: '500'}}/> : <img src={this.props.image} style={{height: '300px', width: 'auto'}}/>}
+                    {this.props.demo ? <YouTube className='youtube-embed' videoId={this.props.demo} opts={{height: '350', width: '550'}}/> : <img src={this.props.image} style={{height: '350px', width: 'auto'}}/>}
                 </div>
                 <div className='project-desc'>
                     <p>{this.props.description}</p>
