@@ -19,10 +19,12 @@ function Contact() {
             {/* <Mailto email="madelinecorman@gmail.com" subject="" body="">
                 Send me an email!
             </Mailto> */}
+            <p>Interested in getting in touch?</p>
             <div className='mail-to-div'>
                 <a className='mail-to' href="mailto:madelinecorman@gmail.com">Send me an email!</a>
             </div>
             <br/>
+            <p>Or connect with me on social media:</p>
             <span className="social-icons">
                 <a href="https://www.linkedin.com/in/madeline-corman/" target="_blank"><FontAwesomeIcon icon={faLinkedin} size={'2x'} color={'black'}/></a>
             </span>

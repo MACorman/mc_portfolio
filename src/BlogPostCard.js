@@ -22,10 +22,10 @@ const shortenText = (text) => {
 function BlogPostCard(props) {
     return(
         <Slide>
-        <div>
-            {props.thumbnail && <a href={props.link} target="_blank"><img src={props.thumbnail} alt={props.title} style={{height: 400, width: 'auto'}}/></a>}
+        <div className="blog-slide">
+            {props.thumbnail && <a href={props.link} target="_blank"><img src={props.thumbnail} alt={props.title} style={{height: 400, width: 'auto', marginBottom: '2%'}}/></a>}
             <div>
-                <h5>{props.title}</h5>
+                <a href={props.link} target="_blank">{props.title}</a>
                 <p>{tagToText(props.content).slice(0, shortenText(tagToText(props.content)))}</p>
             </div>
         </div>
