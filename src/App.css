@@ -58,7 +58,6 @@ a:hover {
   color: grey;
 }
 
-
 .logo-initials {
   width: 5%;
   padding-top: 2%;
@@ -156,13 +155,14 @@ a:hover {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -60%);
-  width: 20%;
+  width: fit-content;
 
 }
 
 .contact-title {
  font-size: 2.5em; 
  font-weight: lighter;
+ 
 }
 
 /* .mail-to {
@@ -255,6 +255,7 @@ a:hover {
 .blog-slide {
   text-align: center;
 }
- .project-title {
-   margin-top: 0%;
- }
+
+.project-title {
+  margin-top: 0%;
+}

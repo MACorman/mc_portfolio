@@ -23,7 +23,7 @@ function BlogPostCard(props) {
     return(
         <Slide>
         <div className="blog-slide">
-            {props.thumbnail && <a href={props.link} target="_blank"><img src={props.thumbnail} alt={props.title} style={{height: 400, width: 'auto', marginBottom: '2%'}}/></a>}
+            {props.thumbnail && <a href={props.link} target="_blank"><img src={props.thumbnail} alt={props.title} style={{height: 380, width: 'auto', marginBottom: '2%'}}/></a>}
             <div>
                 <a href={props.link} target="_blank">{props.title}</a>
                 <p>{tagToText(props.content).slice(0, shortenText(tagToText(props.content)))}</p>
